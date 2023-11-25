@@ -34,7 +34,23 @@ const ContactForm: FC = memo(() => {
       event.preventDefault();
       /**
        * This is a good starting point to wire up your form submission logic
-       * */
+       * 
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbxdOIiE1Vo7bjZyxzPFlJn62tAkAyWlGXVdjfaIuqBmSTy3WfI9VLpo8PrWTY9QyuDx/exec",
+            
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (){
+                alert("Form submitted successfully")
+                window.location.reload()
+                // window.location.href="thankyou.html"
+            },
+            error:function (){
+                alert("Something Error")
+
+            }
+        })*/
+
       console.log('Data to send: ', data);
     },
     [data],

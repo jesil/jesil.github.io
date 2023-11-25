@@ -6,11 +6,13 @@ import {FC, memo} from 'react';
 import {heroData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 import Socials from '../Socials';
+//import particleBackground from '../particles/particlesBackground';
 
 const Hero: FC = memo(() => {
   const {imageSrc, name, description, actions} = heroData;
 
   return (
+    
     <Section noPadding sectionId={SectionId.Hero}>
       <div className="relative flex h-screen w-full items-center justify-center">
         <Image
