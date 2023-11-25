@@ -15,16 +15,20 @@
     "@headlessui/react": "^1.7.16",
     "@heroicons/react": "^2.0.18",
     "autoprefixer": "^10.4.14",
+    "axios": "^1.6.2",
     "classnames": "^2.3.2",
     "next": "^13.4.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ts-pattern": "^5.0.4"
+    "react-particles": "^2.12.2",
+    "ts-pattern": "^5.0.4",
+    "tsparticles-slim": "^2.12.0"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.4.12",
     "@tailwindcss/forms": "^0.5.4",
     "@tailwindcss/typography": "^0.5.9",
+    "@types/jquery": "^3.5.29",
     "@types/node": "^20.4.5",
     "@types/react": "^18.2.18",
     "@types/tailwindcss": "^3.1.0",
