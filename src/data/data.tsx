@@ -88,7 +88,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: profilepic,
+      href: 'https://drive.google.com/u/0/uc?id=1mh6SxBLhr35esAVkbsB_0yOWcB53lYXq&export=download',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
