@@ -1,4 +1,4 @@
-# React JS Resume Website Template
+# React JS Resume Website Templat
 
 ![ReactJS Resume Website Template](resume-screenshot.jpg?raw=true 'ReactJS Resume Website Template')
 
