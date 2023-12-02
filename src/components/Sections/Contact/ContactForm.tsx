@@ -1,4 +1,4 @@
-import React, {FC, memo, useCallback, useMemo, useState} from 'react';
+import {FC, memo, useCallback, useMemo, useState} from 'react';
 
 interface FormData {
   name: string;
@@ -32,26 +32,24 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      console.log(event)
-      console.log(data)
-      fetch('https://script.google.com/macros/s/AKfycbyn6LkPO3SiN5_N8kq9q1h3CzgzR_fFaPMe2na35xEPCE7dh56bTnJCRJrXqPNSK9tm/exec', {
-  method: 'POST',
-  headers: {
-    'Accept': 'application/json',
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify({
-    data
-  })
-}).then(response => {
-  console.log(response)
-  window.location.reload();
-})
-.catch(error =>{
-  console.log(error)
-  window.alert('Oops, "Send Message" is not behaving well at the moment. Please select the mail or any other options provided');
-});
-        
+      /**
+       * This is a good starting point to wire up your form submission logic
+       * 
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbxdOIiE1Vo7bjZyxzPFlJn62tAkAyWlGXVdjfaIuqBmSTy3WfI9VLpo8PrWTY9QyuDx/exec",
+            
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (){
+                alert("Form submitted successfully")
+                window.location.reload()
+                // window.location.href="thankyou.html"
+            },
+            error:function (){
+                alert("Something Error")
+
+            }
+        })*/
 
       console.log('Data to send: ', data);
     },
